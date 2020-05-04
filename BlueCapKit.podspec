@@ -11,12 +11,15 @@ Pod::Spec.new do |spec|
   spec.author             = { "Troy Stribling" => "me@troystribling.com" }
   spec.social_media_url   = "http://twitter.com/troystribling"
 
-  spec.platform           = :ios, "12.0"
+  #spec.platform           = :ios, "12.0"
 
   spec.cocoapods_version  = '>= 1.1'
 
   spec.source             = { :git => "https://github.com/troystribling/BlueCap.git", :tag => "#{spec.version}" }
   spec.source_files       = "BlueCapKit/**/*.swift"
   spec.frameworks         = "CoreBluetooth", "CoreLocation"
+  
+  spec.watchos.deployment_target = '3.0'
+  spec.ios.deployment_target = '12.0'
 
 end

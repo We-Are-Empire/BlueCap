@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.source_files       = "BlueCapKit/**/*.swift"
   spec.frameworks         = "CoreBluetooth", "CoreLocation"
   
-  spec.watchos.deployment_target = '3.0'
+  spec.watchos.deployment_target = '5.0'
   spec.ios.deployment_target = '12.0'
 
 end
